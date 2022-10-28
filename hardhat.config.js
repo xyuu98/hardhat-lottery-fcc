@@ -21,6 +21,9 @@ module.exports = {
         hardhat: {
             chainId: 31337,
         },
+        localhost: {
+            chainId: 31337,
+        },
         goerli: {
             url: GOERLI_RPC_URL,
             accounts: [PRIVATE_KEY],
@@ -59,6 +62,23 @@ module.exports = {
             default: 1,
         },
     },
+
+    contractSizer: {
+        runOnCompile: false,
+        only: ["Raffle"],
+    },
+
+    solidity: {
+        compilers: [
+            {
+                version: "0.8.7",
+            },
+            {
+                version: "0.4.24",
+            },
+        ],
+    },
+
     mocha: {
         timeout: 500000,
     },

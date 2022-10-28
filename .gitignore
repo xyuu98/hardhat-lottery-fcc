@@ -3,3 +3,6 @@ cache
 artifacts
 .env
 gas-report.txt
+coverage
+coverage.json
+deployments
