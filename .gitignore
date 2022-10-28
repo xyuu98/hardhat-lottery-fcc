@@ -2,7 +2,7 @@ node_modules
 cache
 artifacts
 .env
+deployments
 gas-report.txt
 coverage
 coverage.json
-deployments
